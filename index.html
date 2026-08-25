@@ -388,6 +388,18 @@
     color: rgba(255,249,238,0.8); margin-bottom: 9px;
   }
   .footer-col a:hover{ color: var(--gold-light); }
+
+  .social-row{ display:flex; gap: 12px; margin-top: 4px; }
+  .social-icon{
+    width: 38px; height: 38px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.08);
+    border: 2px solid rgba(255,255,255,0.18);
+    display:flex; align-items:center; justify-content:center;
+    transition: background .15s ease, border-color .15s ease, transform .15s ease;
+  }
+  .social-icon:hover{ background: var(--coral); border-color: var(--coral); transform: translateY(-2px); }
+  .social-icon svg{ width: 18px; height: 18px; fill: var(--parchment); }
   .footer-bottom{
     border-top: 1px solid rgba(255,249,238,0.15);
     padding-top: 20px;
@@ -526,7 +538,18 @@
         </div>
         <div class="footer-col">
           <h5>Contact</h5>
-          <a href="mailto:chescovotes@gmail.com">chescovotes@gmail.com</a>
+          <a href="info@chescovotes.com">chescovotes@gmail.com</a>
+        </div>
+        <div class="footer-col">
+          <h5>Follow</h5>
+          <div class="social-row">
+            <a class="social-icon" href="https://www.facebook.com/share/1DUgNs2xwP/" target="_blank" rel="noopener" aria-label="Chester County Votes on Facebook">
+              <svg viewBox="0 0 24 24"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5.02 3.66 9.18 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.51 1.49-3.9 3.77-3.9 1.09 0 2.24.2 2.24.2v2.46H15.2c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.91h-2.34V22c4.78-.76 8.44-4.92 8.44-9.94Z"/></svg>
+            </a>
+            <a class="social-icon" href="https://x.com/ChescoVotes" target="_blank" rel="noopener" aria-label="Chester County Votes on X">
+              <svg viewBox="0 0 24 24"><path d="M18.9 2H22l-7.6 8.68L23.3 22h-6.94l-5.43-7.1L4.7 22H1.6l8.13-9.29L.7 2h7.11l4.91 6.49L18.9 2Zm-1.22 18h1.72L6.4 3.9H4.56L17.68 20Z"/></svg>
+            </a>
+          </div>
         </div>
       </div>
     </div>
